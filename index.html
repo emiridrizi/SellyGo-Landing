@@ -26,7 +26,6 @@
       <div class="top-bar">
         <div class="logo">
           <a href="#">
-            <!-- <img alt="logo" src="assets/img/logo-3.png"> -->
             <h2 class="text-light">SellyGo</h2>
           </a>
         </div>
@@ -60,25 +59,6 @@
                 </div>
               </a>
             </div>
-
-            <!-- <div class="google-star">
-              <div>
-                <img src="assets/img/google.png" alt="img">
-                <ul class="stars">
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li>(5.0)</li>
-                </ul>
-              </div>
-              <ul class="social-icon">
-                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="#"><i class="flaticon-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-              </ul>
-            </div> -->
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-6">
@@ -122,9 +102,16 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 py-3">
           <div class="mobil-pic">
-            <img src="https://placehold.co/419x620" alt="img">
+            <div class="video-preview">
+              <div class="iphone-frame">
+                <img src="assets/img/sellygo-home.png" alt="SellyGo App Preview">
+                <div class="play-button" onclick="openVideoModal()">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-lg-4">
@@ -153,248 +140,23 @@
       </div>
     </div>
   </section>
-  <!-- <section id="contact" class="gap  ">
-    <div class="container">
-      <div class="heading">
-        <img src="assets/img/heading_img-4.png" alt="img">
-        <span>Travel light with a small power bank</span>
-        <h2> Beautiful design with modern UI <span> Mobile App </span></h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <form role="form" class="get-a-quote" id="contact-form" method="post"
-            style="background-image: url(assets/img/lins-img-2.png);  ">
-            <i class="flaticon-successful"></i>
-            <div>
-              <h3>Get a Quote</h3>
-              <h6>Marketing Business campaign</h6>
-            </div>
-            <input type="text" name="Complete Name" placeholder="Complete Name" required="">
 
-            <input type="email" name="Email Address" placeholder="Email Address" required="">
-
-            <input type="number" name="Phone No" placeholder="Phone No" required="">
-
-            <p>For what purpose and reasons?</p>
-            <div class="d-flex align-items-center">
-              <div class="radio-button">
-                <input type="radio" id="Virtual" name="fav_language" value="In-Office">
-                <label for="Virtual">Personal</label>
-              </div>
-              <div class="radio-button">
-                <input type="radio" id="css" name="fav_language" value="In-Office">
-                <label for="css">Commercial</label><br>
-              </div>
-            </div>
-            <button type="submit" class="btn"><span>Submit Now</span></button>
-          </form>
-        </div>
-      </div>
+  <!-- Modal (hidden by default) -->
+  <div id="videoModal" class="video-modal">
+    <div class="video-content">
+      <span class="close" onclick="closeVideoModal()">&times;</span>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
     </div>
-  </section> -->
-  <!-- <section id="pricing" class="gap pricing" style="background-image: url(assets/img/lins-img-1.png);">
-    <div class="container">
-      <div class="heading">
-        <img src="assets/img/heading_img-4.png" alt="img">
-        <span>smart drone for commercial, industrial</span>
-        <h2>Get The Right Pricing <span>Plans For You</span></h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <div class="pricing-table">
-            <div class="table-head">
-              <span>Standard</span>
-              <h2><sup>$</sup>74</h2>
-              <p>/ for single festival</p>
-              <h6>12 days free trial</h6>
-              <i class="flaticon-price-up"></i>
-            </div>
-            <ul class="liststyle">
-              <li>160 GB Storage Capacity</li>
-              <li> Intelligent Flight Battery</li>
-              <li> 7km Transmission Range</li>
-              <li> Photo Sensor Technology</li>
-              <li> Optical Zoom Upto 1X</li>
-            </ul>
-            <a href="#" class="btn two">Get Started</a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="pricing-table two">
-            <div class="table-head">
-              <span>Standard</span>
-              <h2><sup>$</sup>145</h2>
-              <p>/ permanent lifetime</p>
-              <h6>12 days free trial</h6>
-              <i class="flaticon-price-up"></i>
-            </div>
-            <ul class="liststyle">
-              <li>160 GB Storage Capacity</li>
-              <li> Intelligent Flight Battery</li>
-              <li> 7km Transmission Range</li>
-              <li> Photo Sensor Technology</li>
-              <li> Optical Zoom Upto 1X</li>
-            </ul>
-            <a href="#" class="btn ">Get Started</a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="pricing-table">
-            <div class="table-head">
-              <span>Standard</span>
-              <h2><sup>$</sup>285</h2>
-              <p>/ monthly hire</p>
-              <h6>12 days free trial</h6>
-              <i class="flaticon-price-up"></i>
-            </div>
-            <ul class="liststyle">
-              <li>160 GB Storage Capacity</li>
-              <li> Intelligent Flight Battery</li>
-              <li> 7km Transmission Range</li>
-              <li> Photo Sensor Technology</li>
-              <li> Optical Zoom Upto 1X</li>
-            </ul>
-            <a href="#" class="btn two">Get Started</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- <section id="faq" class="accordion-section for">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-7">
-          <div class="heading two">
-            <span>inspiration Faqs. Client Guide!</span>
-            <h2>Have <span> questions?</span> We’ve got answers. </h2>
-          </div>
-          <div class="accordion">
-            <div class="accordion-item">
-              <a href="#" class="heading">
-                <div class="icon"></div>
-                <div class="title">Can smartwatch work without phone? </div>
-              </a>
-
-              <div class="content">
-                <p>fitness tracking (steps, heart rate, sleep monitoring), GPS navigation, smartphone notifications,
-                  music control, contactless payments, and health monitoring</p>
-              </div>
-            </div>
-            <div class="accordion-item active">
-              <a href="#" class="heading">
-                <div class="icon"></div>
-                <div class="title">What are the features of a smart watch?</div>
-              </a>
-
-              <div class="content" style="display: block;">
-                <p>fitness tracking (steps, heart rate, sleep monitoring), GPS navigation, smartphone notifications,
-                  music control, contactless payments, and health monitoring</p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <a href="#" class="heading">
-                <div class="icon"></div>
-                <div class="title">What are the features of a smart watch?</div>
-              </a>
-
-              <div class="content">
-                <p>fitness tracking (steps, heart rate, sleep monitoring), GPS navigation, smartphone notifications,
-                  music control, contactless payments, and health monitoring</p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <a href="#" class="heading">
-                <div class="icon"></div>
-                <div class="title">Does a smartwatch need a SIM card?</div>
-              </a>
-              <div class="content">
-                <p>fitness tracking (steps, heart rate, sleep monitoring), GPS navigation, smartphone notifications,
-                  music control, contactless payments, and health monitoring</p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <a href="#" class="heading">
-                <div class="icon"></div>
-                <div class="title">What is the value of business consulting?</div>
-              </a>
-              <div class="content">
-                <p>fitness tracking (steps, heart rate, sleep monitoring), GPS navigation, smartphone notifications,
-                  music control, contactless payments, and health monitoring</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-5">
-          <div class="accordion-img">
-            <img src="https://placehold.co/510x733" alt="img">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
+  </div>
   <footer class="gap no-bottom" style="background-color: #1a1a1a;">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <!-- <div class="heading two">
-            <h4>Special features or updates are <span>waiting for you!</span></h4>
-            <p>Get recent news and features updates notification.</p>
-          </div>
-          <form role="form" class="get-subscribee" id="subscribe-form" method="post">
-            <input type="email" name="Email_Address" placeholder="email address" required="">
-            <button type="submit" class="btn bk">Subscribe</button>
-          </form> -->
           <div class="footer-text">
             <h4>Phone: <a href="callto:38971700727">+389 71 700 727</a> </h4>
             <h4>Email: <a href="mailto:emiridrizi8@gmail.com">emiridrizi8@gmail.com</a> </h4>
           </div>
         </div>
-        <!-- <div class="col-lg-2 col-md-4 col-6">
-          <div class="useful-link">
-            <h3>Useful Links</h3>
-            <ul>
-              <li><a href="#"> Documents </a></li>
-              <li><a href="#"> Products</a></li>
-              <li><a href="#">Quadrone Shop</a></li>
-              <li><a href="#"> Blog and News</a></li>
-              <li><a href="#"> About Us</a></li>
-              <li><a href="#"> Gallery</a></li>
-              <li><a href="#">Contacts</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-4 col-6">
-          <div class="useful-link">
-            <h3>Category</h3>
-            <ul>
-              <li><a href="#"> Multi-Rotor Drones
-                </a></li>
-              <li><a href="#"> Fixed-Wing Drones
-                </a></li>
-              <li><a href="#">Rotor Drones
-                </a></li>
-              <li><a href="#"> Wing Drones
-                </a></li>
-              <li><a href="#"> Rotor Drones
-                </a></li>
-              <li><a href="#"> Airworthiness
-                </a></li>
-              <li><a href="#">Long endurance</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-4 col-sm-6">
-          <div class="useful-link">
-            <h3>Resources</h3>
-            <ul>
-              <li><a href="#"> Designer resources </a></li>
-              <li><a href="#"> Featured partners</a></li>
-              <li><a href="#">Help Center</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#"> Terms and Condition</a></li>
-            </ul>
-          </div>
-        </div> -->
       </div>
       <div class="copy-right">
         <p>© 2025 SellyGo by Emir Idrizi. All Rights Reserved.</p>
@@ -415,4 +177,14 @@
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/sweetalert.min.js"></script>
   <script src="assets/js/contact.js"></script>
+  <script>
+  function openVideoModal() {
+    document.getElementById('videoModal').style.display = 'flex';
+  }
+
+  function closeVideoModal() {
+    document.getElementById('videoModal').style.display = 'none';
+  }
+</script>
+
 </body>
