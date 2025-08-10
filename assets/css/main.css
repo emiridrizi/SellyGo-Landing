@@ -81,12 +81,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 body,
 html {
-  font-family: "Bricolage Grotesque", sans-serif;
+  /* font-family: "Bricolage Grotesque", sans-serif; */
   overflow-x: hidden;
 }
 
 p {
-  font-family: "Questrial";
+  /* font-family: "Questrial"; */
   font-size: 18px;
   line-height: 30px;
   color: #444444;
@@ -4362,4 +4362,13 @@ body.three .watch-img.three .location .data p {
   border-radius: 50%;
   padding: 0 12px;
   cursor: pointer;
+}
+
+.policies a {
+  color: #fff !important;
+  text-decoration: underline !important;
+}
+
+.policies a:hover {
+  color: lightskyblue !important;
 }
