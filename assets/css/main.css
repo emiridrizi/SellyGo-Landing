@@ -3367,15 +3367,23 @@ body.three .blog-one .blog-text span {
   }
 }
 
-.choose-promix {
-  background-color: #f3f3f3;
-  padding-bottom: 60px;
+/* Center image container */
+.choose-promix .mobil-pic {
+  text-align: center;
 }
-@media (max-width: 1400px) {
+
+/* Default (desktop) image style */
+.choose-promix .mobil-pic img {
+  max-width: 80%;
+  height: auto;
+  display: inline-block;
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
   .choose-promix .mobil-pic img {
-    width: 100%;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    max-width: 80%;
+    margin: 20px auto;
   }
 }
 .choose-promix .ultra {
